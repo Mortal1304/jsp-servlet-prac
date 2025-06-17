@@ -1,0 +1,33 @@
+CREATE DATABASE book;
+
+drop database book;
+USE book;
+
+CREATE TABLE BookData (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  BookName VARCHAR(100),
+  BookEdition VARCHAR(255),
+  BookPrice FLOAT
+);
+
+
+INSERT INTO BookData (BookName, BookEdition, BookPrice) VALUES
+('The Luminous Dead', '1st Edition', 499.00),
+('The Deep', '2nd Edition', 399.50),
+('Dead Silence', '1st Edition', 449.75),
+('Into the Drowning Deep', '1st Edition', 549.99),
+('Salvaged', '3rd Edition', 429.25),
+('Hull Zero Three', '2nd Edition', 379.90),
+('The Troop', 'Special Edition', 469.50),
+('Gideon the Ninth', '1st Edition', 519.99),
+('Parasite', '2nd Edition', 409.00),
+('Blindsight', 'Anniversary Edition', 489.99);
+
+
+select * from BookData;
+
+
+
+
+
+
